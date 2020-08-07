@@ -446,6 +446,11 @@ img {
   line-height: 1.19;
   color: var(--secondary-white-text-color);
 }
+
+.footer-address {
+  margin-right: 69px;
+}
+
 .footer-address-map {
   font-style: normal;
   font-weight: 400;
@@ -456,9 +461,9 @@ img {
 .footer-address-list:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-logo-addres {
+/* .footer-logo-addres {
   margin-right: 69px;
-}
+} */
 .footer-address-mail,
 .footer-address-tel {
   font-weight: 400;
@@ -476,6 +481,7 @@ img {
 
 .footer-join {
   margin-top: 12px;
+  margin-right: 94px;
 }
 
 .footer-address-mail:hover,
@@ -517,9 +523,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.footer-subscribe {
-  display: flex;
-}
 .subscribe {
   display: flex;
   width: 200px;
@@ -536,8 +539,6 @@ img {
   border: 1px solid transparent;
   background-color: var(--accent-color);
   color: var(--secondary-white-text-color);
-  margin-top: 48px;
-  margin-left: 478px;
 }
 
 .footer-subscribe-icon {
@@ -545,6 +546,41 @@ img {
   height: 24px;
   margin-left: 11px;
   fill: var(--secondary-white-text-color);
+}
+
+.form-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-subscribe-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+  background-color: var(--footer-bgr-color);
+  color: var(--footer-address-text-color);
+}
+
+.form-subscribe-input::placeholder {
+  color: var(--footer-address-text-color);
+}
+
+.form-subscribe-title {
+  display: block;
+  padding-top: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  align-items: center;
+  color: var(--secondary-white-text-color);
 }
 
 /* Оформление страницы ПОРТФОЛИО */
