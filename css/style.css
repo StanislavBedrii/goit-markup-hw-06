@@ -49,6 +49,7 @@ body {
 
   --transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-bgr-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -249,6 +250,7 @@ img {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--secondary-white-text-color);
+  outline: none;
 }
 
 /* Оформление модального окна */
@@ -299,6 +301,7 @@ img {
   border-radius: 50%;
   outline: none;
   cursor: pointer;
+  transition: var(--transition-color);
 }
 
 .modal-form-close:hover .modal-form-close-icon,
@@ -339,6 +342,7 @@ img {
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
   transition: var(--transition-color);
+  transition: var(--transition-transform);
 }
 
 .modal-form-icon {
@@ -373,6 +377,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--primary-text-color);
+  transition: var(--transition-transform);
 }
 
 .modal-form-title {
@@ -426,6 +431,9 @@ img {
 
 .modal-form-option-span {
   margin-left: 7px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
 
 .modal-form-custom-checkbox {
@@ -586,6 +594,7 @@ img {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-bgr-color);
 }
 
 .our-team-item:not(:last-child) {
@@ -909,7 +918,7 @@ img {
   left: 0;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transition-transform);
 }
 
 .work-examples-list h2 {
