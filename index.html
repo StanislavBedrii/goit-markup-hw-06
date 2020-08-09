@@ -72,7 +72,99 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="button">Заказать услугу</button>
+        <button data-modal-open class="button">Заказать услугу</button>
+        <!--Оформление модального окна=====================================================-->
+        <div data-modal class="backdrop is-hidden">
+          <form action="#" class="modal-form" autocomplete="off">
+            <button data-modal-close class="modal-form-close">
+              <svg width="18px" heigth="18px" class="modal-form-close-icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <b class="modal-form-title"
+              >Оставьте свои данные, мы вам перезвоним</b
+            >
+            <div class="modal-form-wrapper">
+              <input
+                type="text"
+                name="user-name"
+                id="modal-user-name"
+                class="modal-form-input"
+                required
+                placeholder=" "
+                minlength="2"
+              />
+              <label class="modal-form-label" for="modal-user-name">Имя</label>
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#modal-name"></use>
+              </svg>
+            </div>
+            <div class="modal-form-wrapper">
+              <input
+                type="tel"
+                name="user-tel"
+                id="modal-user-tel"
+                class="modal-form-input"
+                required
+                placeholder=" "
+              />
+              <label class="modal-form-label" for="modal-user-tel"
+                >Телефон</label
+              >
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#modal-tel"></use>
+              </svg>
+            </div>
+            <div class="modal-form-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                id="modal-user-email"
+                class="modal-form-input"
+                required
+                placeholder=" "
+              />
+              <label class="modal-form-label" for="modal-user-email"
+                >Почта</label
+              >
+              <svg class="modal-form-icon">
+                <use href="./images/sprite.svg#modal-email"></use>
+              </svg>
+            </div>
+            <div class="modal-form-message">
+              <textarea
+                class="modal-form-text"
+                name="user-message"
+                id="modal-user-message"
+                placeholder=" "
+              ></textarea>
+              <label class="modal-form-text-label" for="modal-user-message"
+                >Комментарий</label
+              >
+            </div>
+            <label class="modal-form-option-label">
+              <input
+                type="checkbox"
+                name="policy"
+                value="accept-policy"
+                class="modal-form-checkbox"
+                required
+              />
+              <span class="modal-form-custom-checkbox">
+                <svg width="11px" heigth="8px" class="modal-form-custom-icon">
+                  <use href="./images/sprite.svg#modal-mark"></use>
+                </svg>
+              </span>
+              <span class="modal-form-option-span"
+                >Соглашаюсь с рассылкой и принимаю
+                <a class="modal-form-option-link" href="#"
+                  >Условия договора</a
+                ></span
+              >
+            </label>
+            <button type="submit" class="modal-form-btn">Отправить</button>
+          </form>
+        </div>
       </section>
 
       <!--Секция наши преимущества ======================================================-->
@@ -538,7 +630,7 @@
         </div>
         <div class="footer-subscribe">
           <b class="form-subscribe-title">Подпишитесь на рассылку</b>
-          <form action="#" class="form-subscribe">
+          <form action="#" class="form-subscribe" autocomplete="off">
             <input
               class="form-subscribe-input"
               type="email"
